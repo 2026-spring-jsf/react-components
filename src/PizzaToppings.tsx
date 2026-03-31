@@ -1,8 +1,27 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { dummyPizzaToppingsFromApi } from "./dummy-pizza-toppings";
+import { useState } from "react";
+import Form from "react-bootstrap/Form";
 
 export const PizzaToppings = () => {
- 
+
+    //
+    // React hooks...
+    //
+    const [availablePizzaToppings, setAvailablePizzaToppings] = useState(
+        dummyPizzaToppingsFromApi.map(
+            x => ({
+                ...x,
+                checked: false,
+            })
+        )
+    );
+
+    //
+    // Calculated/derived state and other code...
+    //
+
     //
     // Return JSX...
     // 
@@ -25,6 +44,22 @@ export const PizzaToppings = () => {
                 >
                     None
                 </Button>
+                <Form
+                    className="mt-3"
+                >
+                    {
+                        availablePizzaToppings.map(
+                            x => (
+                                <Form.Check 
+                                    key={x.name}
+                                    id={x.name}
+                                    type="checkbox"
+                                    label={`${x.name} ($${x.price.toFixed(2)})`}
+                                />
+                            )
+                        )
+                    }
+                </Form>
                 <h4
                     className="mt-3"
                 >
