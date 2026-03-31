@@ -44,12 +44,32 @@ export const PizzaToppings = () => {
                 </Card.Title>
                 <Button
                     variant="outline-primary"
+                    onClick={
+                        () => setAvailablePizzaToppings(
+                            availablePizzaToppings.map(
+                                x => ({
+                                    ...x,
+                                    checked: true,
+                                })
+                            )
+                        )
+                    }
                 >
                     All
                 </Button>
                 <Button
                     className="ms-2"
                     variant="outline-primary"
+                    onClick={
+                        () => setAvailablePizzaToppings(
+                            availablePizzaToppings.map(
+                                x => ({
+                                    ...x,
+                                    checked: false,
+                                })
+                            )
+                        )
+                    }
                 >
                     None
                 </Button>
