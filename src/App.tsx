@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
+const PizzaToppings = () => <h2>Choose your pizza toppings...</h2>
+
 function App() {
 
   return (
@@ -10,6 +12,11 @@ function App() {
       <h1>
         React Components
       </h1>
+      <PizzaToppings />
+      <PizzaToppings />
+      <PizzaToppings />
+      <PizzaToppings />
+      <PizzaToppings />
     </div>
   )
 }
