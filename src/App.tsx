@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { PizzaToppings } from './PizzaToppings';
+import TsteeleComponent from './TsteeleComponent';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         React Components
       </h1>
       <PizzaToppings />
+      <TsteeleComponent />
     </div>
   )
 }
