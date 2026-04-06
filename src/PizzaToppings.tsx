@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Form from 'react-bootstrap/Form';
+
 import { dummyPizzaToppingsFromApi } from "./dummy-pizza-toppings";
 
 const PizzaToppings = () => {
@@ -68,20 +70,33 @@ const PizzaToppings = () => {
             >
                 None
             </Button>
-            {
-                availablePizzaToppings.map(
-                    x => (
-                        <div
-                            className="my-2"
-                        >
-                            {
-                                `${x.name} ($${x.price.toFixed(2)})`
-                            }
-                        </div>
+            <Form>
+                {
+                    availablePizzaToppings.map(
+                        x => (
+                            <Form.Check
+                                key={x.name}
+                                id={x.name}
+                                label={`${x.name} ($${x.price.toFixed(2)})`}
+                                checked={x.checked}
+                                onChange={
+                                    () => setAvailablePizzaToppings(
+                                        availablePizzaToppings.map(
+                                            y => ({
+                                                ...y,
+                                                checked: y === x
+                                                    ? y.checked = !y.checked
+                                                    : y.checked
+                                            })
+                                        )
+                                    )
+                                }
+                                className="my-2"
+                            />
+                        )
                     )
-                )
-            }
-
+                }
+            </Form>
             <h3>
                 Total: {
                     `$${total.toFixed(2)}`
