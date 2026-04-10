@@ -3,7 +3,9 @@ import Spinner from 'react-bootstrap/Spinner';
 
 const TsteeleComponent02 = () => {
   return (
-    <Card>
+    <Card
+        className="my-3"
+    >
         <Card.Body>
             <Card.Title
                 className='mb-3'
