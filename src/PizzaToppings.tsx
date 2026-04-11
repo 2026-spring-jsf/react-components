@@ -49,6 +49,7 @@ const PizzaToppings = () => {
                             topping => (
                                 <Form.Check checked={topping.checked}
                                             id={topping.name}
+                                            key={topping.name}
                                             label={`${topping.name} ($${topping.price.toFixed(2)})`} 
                                             onChange={
                                                 () => setAvailableToppings( 
