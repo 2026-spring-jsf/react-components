@@ -1,7 +1,26 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { dummyPizzaToppingsFromApi } from "./dummy-pizza-toppings";
 
 const PizzaToppings = () => {
+  //
+  //React hooks here...
+  //
+  const [availablePizzaToppings, setAvailablePizzaToppings] = useState(
+    dummyPizzaToppingsFromApi.map((x) => ({
+      ...x,
+      checked: false,
+    })),
+  );
+
+  //
+  //Calculate derived state, and other code...
+  //
+
+  //
+  //Return JSX...
+  //
   return (
     <Card>
       <Card.Body>
@@ -10,7 +29,9 @@ const PizzaToppings = () => {
         <Button className="ms-2" variant="outline-primary">
           None
         </Button>
-        <div>Pizza toppings go here...</div>
+        {availablePizzaToppings.map((x) => (
+          <div className="my-2">{`${x.name} (${x.price})`}</div>
+        ))}
         <h3>Total: $0.00</h3>
       </Card.Body>
     </Card>
