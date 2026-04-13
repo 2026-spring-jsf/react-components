@@ -11,7 +11,7 @@ But this way (notice the curly brackets, and return keyword) would allow for mor
 const PizzaToppings = () => {
   return <h2>Choose your pizza toppings...</h2>;
 };
-Code has been moved to its own file
+Code has been moved to its own file: PizzaTopping.tsx
 */
 const App = () => {
   return (
