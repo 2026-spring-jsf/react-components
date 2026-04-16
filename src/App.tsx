@@ -2,8 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PizzaToppings from "./PizzaToppings";
 import TsteeleComponent from "./TsteeleComponent";
-import ThamiltonComponent from "./ThamiltonComponent";
 import Welcome from "./Welcome";
+import ThamiltonComponent from "./ThamiltonComponent";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
