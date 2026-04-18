@@ -1,12 +1,12 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import PizzaToppings from "./PizzaToppings";
+import PizzaToppings from './PizzaToppings';
 import TsteeleComponent from "./TsteeleComponent";
 import Welcome from "./Welcome";
 import ThamiltonComponent from "./ThamiltonComponent";
 import DweiseComponent from './DweiseAccordionComponent';
+import CBaresComponent from './CBaresComponent';
+import ZsmuckerbryanComponent from './ZsmuckerbryanComponent';
 
 import PizzaToppings from './PizzaToppings';
 import TsteeleComponent from './TsteeleComponent';
@@ -22,6 +22,8 @@ const App = () => {
       <Welcome />
       <ThamiltonComponent />
       <DweiseComponent />
+      <CBaresComponent />
+      <ZsmuckerbryanComponent />
       <LmeierComponent />
     </div>
   );
