@@ -8,7 +8,7 @@ import DweiseComponent from './DweiseAccordionComponent';
 import CBaresComponent from './CBaresComponent';
 import ZsmuckerbryanComponent from './ZsmuckerbryanComponent';
 import MrooneyButton from './mrooneyButton';
-
+import LmeierComponent from './LmeierComponent';
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
       <CBaresComponent />
       <ZsmuckerbryanComponent />
       <MrooneyButton />
+      <LmeierComponent />
     </div>
   );
 };
