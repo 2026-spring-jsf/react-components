@@ -4,13 +4,14 @@ import Welcome from "./Welcome";
 import PizzaToppings from "./PizzaToppings";
 import TsteeleComponent from "./TsteeleComponent";
 import ThamiltonComponent from "./ThamiltonComponent";
-import DweiseComponent from "./DweiseAccordionComponent";
-import CBaresComponent from "./CBaresComponent";
-import ZsmuckerbryanComponent from "./ZsmuckerbryanComponent";
-import MrooneyButton from "./mrooneyButton";
-import LmeierComponent from "./LmeierComponent";
+import DweiseComponent from './DweiseAccordionComponent';
+import CBaresComponent from './CBaresComponent';
+import ZsmuckerbryanComponent from './ZsmuckerbryanComponent';
+import MrooneyButton from './mrooneyButton';
+import LmeierComponent from './LmeierComponent';
 import SkhangComponent from "./SkhangComponent";
 import KnorbuComponent from './KnorbuComponent';
+import Jfr0099Component from './jJfr0099Component';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <LmeierComponent />
       <SkhangComponent />
       <KnorbuComponent />
+      <Jfr0099Component />
     </div>
   );
 };
